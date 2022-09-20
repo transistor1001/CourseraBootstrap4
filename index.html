@@ -40,7 +40,6 @@
             </div>
         </div>
     </nav>
-
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
@@ -80,7 +79,73 @@
             </div>
         </div>
     </div>
-
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header  bg-warning ">
+                    <h4 class="modal-title text-white">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <dt class="col-12 col-sm-2">Number of Guests</dt>
+                            <div class="col-12 col-sm-10 align-self-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                    <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                    <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                    <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                    <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                    <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <dt class="col-12 col-sm-2">Section</dt>
+                            <div class="btn-group btn-group-toggle ml-3" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off"
+                                        checked>Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <dl class="row">
+                            <dt class="col-12 col-sm-2">Date and Time</dt>
+                            <div class="col-6 col-sm-3 align-self-center">
+                                <form>
+                                    <input type="input" class="form-control" placeholder="Date">
+                                </form>
+                            </div>
+                            <div class="col-6 col-sm-3 align-self-center">
+                                <form>
+                                    <input type="input" class="form-control" placeholder="Time">
+                                </form>
+                            </div>
+                        </dl>
+                        <button type="button" class="btn btn-secondary offset-2" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Reserve</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -92,13 +157,14 @@
                 <div class="col-6 col-sm-3  align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div class="col-6 col-sm-3  align-self-center">
-                <a href="#table" class="btn btn-warning align-self-center pl-5 pr-5" role="button"
-                    data-placement="bottom" aria-disabled="true" data-toggle="tooltip" data-html="true"
-                    title="Or Call us at  <br><strong>+852 12345678</strong>">Reserve Table</a>
+                <!-- <a href="#reserveModal" class="btn btn-warning align-self-center pl-5 pr-5" role="button"
+                    data-placement="bottom" aria-disabled="true" data-toggle="modal" data-html="true"
+                    title="Or Call us at  <br><strong>+852 12345678</strong>">Reserve Table</a> -->
+                <a href="#reserveModal" class="btn btn-warning align-self-center pl-5 pr-5" role="button"
+                    data-placement="bottom" aria-disabled="true" data-toggle="modal" data-html="true">Reserve Table</a>
             </div>
         </div>
     </header>
-
     <div class="container">
         <div class="row row-content">
             <div class="col">
@@ -219,109 +285,64 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-8 offset-sm-2 mt-5" id="table">
-            <div class="card mb-5">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                <div class="card-body col-12">
-                    <dl class="row">
-                        <dt class="col-12 col-sm-2">Number of Guests</dt>
-                        <div class="col-12 col-sm-10 align-self-center">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
-                                <label class="form-check-label" for="inlineRadio1">1</label>
-                                <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">2</label>
-                                <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio3" value="option3">
-                                <label class="form-check-label" for="inlineRadio3">3</label>
-                                <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio4" value="option4">
-                                <label class="form-check-label" for="inlineRadio4">4</label>
-                                <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio5" value="option5">
-                                <label class="form-check-label" for="inlineRadio5">5</label>
-                                <input class="form-check-input ml-2" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio6" value="option6">
-                                <label class="form-check-label" for="inlineRadio6">6</label>
-                            </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./aboutus.html">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="./contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-7 col-sm-5">
+                        <h5>Our Address</h5>
+                        <address>
+                            121, Clear Water Bay Road<br>
+                            Clear Water Bay, Kowloon<br>
+                            HONG KONG<br>
+                            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i>:
+                            <a href="mailto:confusion@food.net">confusion@food.net</a>
+                        </address>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                        <div class="text-center">
+                            <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                                    class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-social-icon btn-facebook"
+                                href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                                    class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                                    class="fa fa-youtube"></i></a>
+                            <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                         </div>
-                    </dl>
-                    <dl class="row">
-                        <dt class="col-12 col-sm-2">Date and Time</dt>
-                        <div class="col-6 col-sm-3 align-self-center">
-                            <form>
-                                <input type="input" class="form-control" placeholder="Date">
-                            </form>
-                        </div>
-                        <div class="col-6 col-sm-3 align-self-center">
-                            <form>
-                                <input type="input" class="form-control" placeholder="Time">
-                            </form>
-                        </div>
-                    </dl>
-                    <button type="button" class="btn btn-primary offset-2">Reserve</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="./contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-                        121, Clear Water Bay Road<br>
-                        Clear Water Bay, Kowloon<br>
-                        HONG KONG<br>
-                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                        <i class="fa fa-envelope fa-lg"></i>:
-                        <a href="mailto:confusion@food.net">confusion@food.net</a>
-                    </address>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
-                                class="fa fa-google-plus"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                                class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                                class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2018 Ristorante Con Fusion</p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p>© Copyright 2018 Ristorante Con Fusion</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+        </footer>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+        -->
 </body>
 
 </html>
